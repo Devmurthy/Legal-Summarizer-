@@ -8,6 +8,10 @@ from werkzeug.utils import secure_filename
 import bcrypt
 import jwt
 import tempfile
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 from extractor import extract_text_from_pdf, extract_text_from_image
 from utils import clean_text
